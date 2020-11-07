@@ -3,7 +3,7 @@
 @section('content')
 <div class="row">
     <div class="col-lg-12 margin-tb">
-        <div class="pull-left">
+        <div class="pull-right">
             <h2>Add New Product</h2>
         </div>
         <div class="pull-right">
@@ -13,8 +13,8 @@
 </div>
 
 @if ($errors->any())
-    <div class="alert alert-danger">
-        <strong>Whoops!</strong> There were some problems with your input.<br><br>
+    <div class="alert alert-danger mb-3">
+        <strong>บันทึกไม่สำเร็จ!</strong> กรุณาตรวจสอบความถูกต้อง<br><br>
         <ul>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
@@ -30,17 +30,36 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Name:</strong>
-                <input type="text" name="name" class="form-control" placeholder="Name">
+                <input type="text" name="name" class="form-control" required autofocus placeholder="Name">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Detail:</strong>
-                <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail"></textarea>
+                <strong>Price:</strong>
+                <input type="number" class="form-control"  required name="price" placeholder="Price"></input>
             </div>
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Count:</strong>
+                <input type="number" class="form-control"  required name="count" placeholder="Count"></input>
+            </div>
+        </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>warehouseID:</strong>
+                <input type="text" required name="warehouseID" class="form-control" placeholder="warehouseID">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>ManufacturerID:</strong>
+                <input type="text" class="form-control"  required name="manufacturerID" placeholder="manufacturerID"></input>
+            </div>
+        </div>
+
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">บันทึก</button>
         </div>
     </div>
 

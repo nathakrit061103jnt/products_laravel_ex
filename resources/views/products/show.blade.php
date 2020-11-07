@@ -13,6 +13,7 @@
     </div>
 
     <div class="row">
+
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Name:</strong>
@@ -21,9 +22,28 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Details:</strong>
-                {{ $product->detail }}
+                <strong>Price:</strong>
+                {{ $product->price }}
             </div>
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Count:</strong>
+                {{ $product->count }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>WarehouseID:</strong>
+                {{ $product->warehouseID }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>ManufacturerID:</strong>
+                {{ $product->manufacturerID }}
+            </div>
+        </div> 
+
     </div>
 @endsection

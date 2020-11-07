@@ -1,3 +1,8 @@
+<h1>ระบบ CRUD Products Laravel</h1>
+<p align="center"><a href="https://laravel.com" target="_blank">
+<img src="shows/indexPages.png" width="400"></a>
+</p>
+
 ## วิธีการนำโปรเจ็กไปทดสอบ
 
 <ol>
@@ -12,3 +17,21 @@
 <li>php artisan serve (ถ้าเซิฟเวอร์ถูกรับบน port 8000 เเล้วก็ทำการไปที่ , <a href="http://127.0.0.1:8000" rel="nofollow">http://127.0.0.1:8000</a> ได้เลย) 
  </li>
 </ol>
+
+## นายณัฐกฤต ทิศเสถียร 60010912540 BC602
+
+## หน้าหลัก
+
+<img src="shows/indexPages.png"  >
+ 
+## บันทึกสินค้า
+
+<img src="shows/createProducts.png"  >
+
+## เเก้ไขสินค้า
+
+<img src="shows/editProducts.png"  >
+
+## เเสดงสินค้า
+
+<img src="shows/showProducts.png"  >
